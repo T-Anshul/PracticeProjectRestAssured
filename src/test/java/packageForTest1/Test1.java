@@ -51,10 +51,11 @@ public class Test1 {
 		RequestSpecification reqspec = RestAssured.given();
 		reqspec.baseUri("https://petstore.swagger.io");
 		reqspec.basePath("/v2/pet");
-//			JSONObject jsonData=new JSONObject();
-//			jsonData.put(reqspec, jsonData)
+			JSONObject jsonData1=new JSONObject();
+			jsonData1.put("var", jsonData);
+			System.out.println(jsonData1);
 		//reqspec.contentType("application/xml");
-		reqspec.body(jsonData);
+		reqspec.body(jsonData1);
 		reqspec.header("accept","application/json");
 		reqspec.header("Content-Type", "application/json");
 		
