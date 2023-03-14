@@ -7,7 +7,7 @@ public class SerializationClass {
 	private String lastName;
 	private int age;
 	private double salary;
-	private int id;
+	private String gender;
 	
 	public String getfirstName() {
 		return firstName;
@@ -24,12 +24,23 @@ public class SerializationClass {
 	public int getage() {
 		return age;
 	}
-	public void setage()
-	public int getId() {
-		return id;
+	public void setage(int age) {
+		this.age=age;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public double getsalary() {
+		return salary;
+	}
+	public void setsalary(double slary) {
+		this.salary=salary;
+	}
+	public String getgender() {
+		return gender;
+	}
+	public void setgender(String gender) {
+		this.gender = gender;
+	}
+	public void allmethod() {
+		System.out.println(firstName  +"   "  +lastName  +"   " +age   +"   "  +gender  +"   " +salary);
 	}
 	
 
